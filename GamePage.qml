@@ -16,9 +16,7 @@ Rectangle {
         }
     }
 
-    Keys.forwardTo: bottombar
-    Keys.onUpPressed: !event.isAutoRepeat && leftbarList.decrementCurrentIndex()
-    Keys.onDownPressed: !event.isAutoRepeat && leftbarList.incrementCurrentIndex()
+    Keys.forwardTo: [leftbarList, bottombar]
     Keys.onPressed: {
         if (event.isAutoRepeat)
             return;
