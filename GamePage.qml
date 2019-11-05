@@ -6,7 +6,6 @@ import "qrc:/qmlutils" as PegasusUtils
 Rectangle {
     id: root
     color: "#333"
-    z: 3
 
     signal close()
 

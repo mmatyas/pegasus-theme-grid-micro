@@ -48,6 +48,7 @@ FocusScope {
         anchors.fill: parent
         visible: opacity > 0.01
         opacity: focus ? 1.0 : 0.0
+        z: 3
 
         readonly property var game: grid.current
         onClose: grid.focus = true
